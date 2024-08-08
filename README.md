@@ -1,1 +1,0 @@
-#kartrush-forum
