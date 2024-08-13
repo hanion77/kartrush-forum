@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>카트라이더 러쉬플러스 - Nexon Community</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" >
 
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -12,18 +14,80 @@
     <div class="top_nav">
       <div class="container">
         <div>
-          <div class="title">
+          <nav class="title">
             <a href="main">
               <img src="images/main_logo.png" alt="">
               <h1>카트라이더 러쉬플러스</h1>
             </a>
-            <button></button>
-          </div>
+            <button>글쓰기</button>
+            <div>
+              <label for="search">검색어 입력</label>
+              <input type="text" id="search" name="search">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button> <!--image로 할지 고민 해보기-->
+            </div>
+            <ul>
+              <li>전체 글 보기</li>
+              <li>⭐ 계정 찾기</li>
+              <li>📢 공지사항</li>
+              <li>📢 시즌 알림판</li>
+              <li>💌 GM 소식</li>
+              <li>💌 필독 안내서</li>
+              <li>⭐ 이벤트&대회 공지</li>
+              <li>⭐ E스포츠 소식</li>
+              <li>⭐ 쿠폰 입력하기</li>
+              <li>넥슨 통합 공지 안내</li>
+            </ul>
+            <dl>
+              <dt>트레이닝 라운지</dt>
+              <dd>묻고 답하기</dd>
+              <dd>카러플 공략</dd>
+            </dl>
+            <dl>
+              <dt>왁자지껄 공간</dt>
+              <dd>커뮤니티 랜덤 구경🔥</dd>
+              <dd>자유 게시판</dd>
+              <dd>클럽 게시판</dd>
+              <dd>스샷&영상 앨범</dd>
+            </dl>
+            <dl>
+              <dt>정책</dt>
+              <dd>운영 정책</dd>
+              <dd>커뮤니티&이벤트 정책</dd>
+            </dl>
+            <dl>
+              <dt>확률정보</dt>
+              <dd>확률형 아이템 정보 1</dd>
+              <dd>확률형 아이템 정보 2</dd>
+              <dd>확률 변경 예정 정보</dd>
+            </dl>
+            <dl>
+              <dt>고객센터</dt>
+              <dd>튕김(끊김) 제보하기</dd>
+              <dd>버그(오류) 제보하기</dd>
+              <dd>신고 접수하기</dd>
+              <dd>건의 접수하기</dd>
+              <dd>밸런스 건의하기</dd>
+              <dd>옵저버 지원 문의</dd>
+            </dl>
+            <dl>
+              <dt>창고</dt>
+              <dd>📢 지난 시즌 알림판</dd>
+            </dl>
+            <div class="top_util">
+              <div>
+                <button>로그인</button>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
   </header>
-  <main></main>
+  <main>
+    <div id="contents">
+      <div class="top_line"></div>
+    </div>
+  </main>
   <footer></footer>
   <script src="js/script.js"></script>
 </body>
