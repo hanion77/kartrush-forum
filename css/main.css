@@ -1,0 +1,32 @@
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  background: #101010;
+}
+
+.wrapper .side_left{
+  width: 18%;
+  height: auto;
+}
+
+.wrapper .side_right{
+  width: 18%;
+  height: auto;
+}
+
+.wrapper .side_left img{
+  display: inline-block;
+  width: 100%;
+}
+
+.wrapper .side_right img{
+  display: inline-block;
+  width: 100%;
+}
+
+.wrapper aside{
+  border-right: 1px solid #fff;
+}
+
+
+
