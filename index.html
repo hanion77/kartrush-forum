@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>카트라이더 러쉬플러스 - Nexon Community</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer">
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer">
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="side_left">
-      <img src="images/Side01.png" alt="left_images">
+      <img src="images/Side01.png" alt="left_images" />
     </div>
     <div class="wrapper">
       <aside>
         <nav class="title">
           <div>
             <h1>
-              <img src="images/main_logo.png" alt="main_logo">
+              <img src="images/main_logo.png" alt="main_logo" />
               <a href="">카트라이더 러쉬플러스</a>
             </h1>
-            <a href="" class="write"><i class="fa-regular fa-pen-to-square"></i> 글쓰기</a>
+            <a href="" class="write"
+              ><i class="fa-regular fa-pen-to-square"></i> 글쓰기</a
+            >
             <form class="search_Box">
               <label for="search">검색어 입력</label>
-              <input type="text" id="search" name="search">
+              <input type="text" id="search" name="search" />
               <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
           </div>
@@ -52,44 +56,89 @@
               <li><a href="">넥슨 통합 공지 안내</a></li>
             </ul>
           </div>
-          <div>
-            <dl>
-              <dt><a href="">트레이닝 라운지</a></dt>
-              <dd><a href="">묻고 답하기</a></dd>
-              <dd><a href="">카러플 공략</a></dd>
-            </dl>
-            <dl>
-              <dt><a href="">왁자지껄 공간</a></dt>
-              <dd><a href="">커뮤니티 랜덤 구경🔥</a></dd>
-              <dd><a href="">자유 게시판</a></dd>
-              <dd><a href="">클럽 게시판</a></dd>
-              <dd><a href="">스샷&amp;영상 앨범</a></dd>
-            </dl>
-            <dl>
-              <dt><a href="">정책</a></dt>
-              <dd><a href="">운영 정책</a></dd>
-              <dd><a href="">커뮤니티&amp;이벤트 정책</a></dd>
-            </dl>
-            <dl>
-              <dt><a href="">확률정보</a></dt>
-              <dd><a href="">확률형 아이템 정보 1</a></dd>
-              <dd><a href="">확률형 아이템 정보 2</a></dd>
-              <dd><a href="">확률 변경 예정 정보</a></dd>
-            </dl>
-            <dl>
-              <dt><a href="">고객센터</a></dt>
-              <dd><a href="">튕김(끊김) 제보하기</a></dd>
-              <dd><a href="">버그(오류) 제보하기</a></dd>
-              <dd><a href="">신고 접수하기</a></dd>
-              <dd><a href="">건의 접수하기</a></dd>
-              <dd><a href="">밸런스 건의하기</a></dd>
-              <dd><a href="">옵저버 지원 문의</a></dd>
-            </dl>
-            <dl>
-              <dt><a href="">창고</a></dt>
-              <dd><a href="">📢 지난 시즌 알림판</a></dd>
-            </dl>
-          </div>
+          <section id="acd">
+            <div class="panel_menu active">
+              <div class="panel_heading">
+                <div>
+                  트레이닝 라운지 <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="panel-body" id="acoco">
+                <ul>
+                  <li><a href="">묻고 답하기</a></li>
+                  <li><a href="">카러플 공략</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel_menu">
+              <div class="panel_heading">
+                <div>
+                  왁자지껄 공간 <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li><a href="">커뮤니티 랜덤 구경🔥</a></li>
+                  <li><a href="">자유 게시판</a></li>
+                  <li><a href="">클럽 게시판</a></li>
+                  <li><a href="">스샷&amp;영상 앨범</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel_menu">
+              <div class="panel_heading">
+                <div>정책 <i class="fa-solid fa-chevron-down"></i></div>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li><a href="">운영 정책</a></li>
+                  <li><a href="">커뮤니티&amp;이벤트 정책</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel_menu">
+              <div class="panel_heading">
+                <div>확률정보 <i class="fa-solid fa-chevron-down"></i></div>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li><a href="">확률형 아이템 정보 1</a></li>
+                  <li><a href="">확률형 아이템 정보 2</a></li>
+                  <li><a href="">확률 변경 예정 정보</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel_menu">
+              <div class="panel_heading">
+                <div>고객센터 <i class="fa-solid fa-chevron-down"></i></div>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li><a href="">튕김(끊김) 제보하기</a></li>
+                  <li><a href="">버그(오류) 제보하기</a></li>
+                  <li><a href="">신고 접수하기</a></li>
+                  <li><a href="">건의 접수하기</a></li>
+                  <li><a href="">밸런스 건의하기</a></li>
+                  <li><a href="">옵저버 지원 문의</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="panel_menu">
+              <div class="panel_heading">
+                <div>창고 <i class="fa-solid fa-chevron-down"></i></div>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li><a href="">📢 지난 시즌 알림판</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </nav>
       </aside>
       <main>
@@ -104,19 +153,19 @@
               <div class="slidewrapper">
                 <ul class="slidecontainer">
                   <li>
-                    <a href=""><img src="images/Auto Slide1.png" alt=""></a>
+                    <a href=""><img src="images/Auto Slide1.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href=""><img src="images/Auto Slide2.png" alt=""></a>
+                    <a href=""><img src="images/Auto Slide2.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href=""><img src="images/Auto Slide3.png" alt=""></a>
+                    <a href=""><img src="images/Auto Slide3.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href=""><img src="images/Auto Slide4.png" alt=""></a>
+                    <a href=""><img src="images/Auto Slide4.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href=""><img src="images/Auto Slide5.png" alt=""></a>
+                    <a href=""><img src="images/Auto Slide5.png" alt="" /></a>
                   </li>
                 </ul>
                 <div class="controller">
@@ -137,7 +186,32 @@
               </ul>
             </div>
             <div class="video">
-              <div></div>
+              <div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/_ZjjrKFtrh0?si=RsoCSkIbto5rzA3W"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <h2>카트라이더 러쉬플러스, 시즌27 속보입니다</h2>
+              <p>
+                1. 신규 테마 [적벽대전] 2. 신규 콘텐츠와 트랙 (커스텀 번호판
+                추가) 3. 편의성 개선 (랠리전 스킬 상자 추가, 랠리전 타임플러스
+                코인 일괄 선물 및 ON/OFF 기능 등) 4. 신규 캐릭터 (관우, 유비,
+                병사 로두마니, 장비 배찌, 소교 월희) 5. 신규 카트 (초선차전,
+                적토마, 제갈량, 주유, 팔괘진, 포뮬러 퍼플, 블레이드 세이버,
+                클라우드 세이버) [!] 시즌27 콘텐츠는 8/6(화) 업데이트 이후부터
+                순차적으로 만나 보실 수 있습니다. *플레이 및 참여 캐릭터 포함,
+                모든 장면은 개발 환경에서 촬영되었습니다. *업데이트 준비 상황에
+                따라 내용이 일부 변경될 수 있는 점 참고 부탁드립니다. #적벽대전
+                #블레이드세이버 #클라우드세이버
+              </p>
             </div>
           </div>
           <div class="section_s">
@@ -148,37 +222,37 @@
                   <div class="scroll">
                     <ul>
                       <li>
-                        <a href=""><img src="images/season_21.png" alt=""></a>
+                        <a href=""><img src="images/season_21.png" alt="" /></a>
                       </li>
                     </ul>
                     <ul>
                       <li>
-                        <a href=""><img src="images/season_22.png" alt=""></a>
+                        <a href=""><img src="images/season_22.png" alt="" /></a>
                       </li>
                     </ul>
                     <ul>
                       <li>
-                        <a href=""><img src="images/season_23.png" alt=""></a>
+                        <a href=""><img src="images/season_23.png" alt="" /></a>
                       </li>
                     </ul>
                     <ul>
                       <li>
-                        <a href=""><img src="images/season_24.png" alt=""></a>
+                        <a href=""><img src="images/season_24.png" alt="" /></a>
                       </li>
                     </ul>
                     <ul>
                       <li>
-                        <a href=""><img src="images/season_25.png" alt=""></a>
+                        <a href=""><img src="images/season_25.png" alt="" /></a>
                       </li>
                     </ul>
                     <ul>
                       <li>
-                        <a href=""><img src="images/season_26.png" alt=""></a>
+                        <a href=""><img src="images/season_26.png" alt="" /></a>
                       </li>
                     </ul>
                     <ul>
                       <li>
-                        <a href=""><img src="images/season_27.png" alt=""></a>
+                        <a href=""><img src="images/season_27.png" alt="" /></a>
                       </li>
                     </ul>
                   </div>
@@ -188,12 +262,15 @@
             </div>
             <div class="season_kart">
               <h2>S27 카트바디</h2>
+              <p>
+                (카트바디의 능력과 효과는 게임 내에서 확인 하실 수 있습니다.)
+              </p>
               <div class="hot">
                 <ul class="kart_body">
-                  <li><img src="images/Kart_1.png" alt=""></li>
-                  <li><img src="images/Kart_2.png" alt=""></li>
-                  <li><img src="images/Kart_3.png" alt=""></li>
-                  <li><img src="images/Kart_4.png" alt=""></li>
+                  <li><img src="images/Kart_1.png" alt="" /></li>
+                  <li><img src="images/Kart_2.png" alt="" /></li>
+                  <li><img src="images/Kart_3.png" alt="" /></li>
+                  <li><img src="images/Kart_4.png" alt="" /></li>
                 </ul>
               </div>
             </div>
@@ -205,14 +282,14 @@
             <a href="">개인정보 처리방침</a>
           </div>
           <div class="footer_nexon">
-            <img src="images/footer_logo.png" alt="">
+            <img src="images/footer_logo.png" alt="" />
             <span>&copy; NEXON Korea Corp. All Right Reserved.</span>
           </div>
         </footer>
       </main>
     </div>
     <div class="side_right">
-      <img src="images/Side02.png" alt="right_images">
+      <img src="images/Side02.png" alt="right_images" />
     </div>
     <script src="js/script.js"></script>
   </body>
