@@ -39,24 +39,24 @@ aside {
   box-sizing: border-box;
 }
 
-.title div h1{
+.title div h1 {
   margin-bottom: 60px;
   text-align: center;
 }
 
-.title div h1 img{
+.title div h1 img {
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-.title div h1 a{
-  margin-top: 16px;
+.title div h1 a {
   font-size: 35px;
   line-height: 36px;
   text-decoration: none;
   color: #fff;
 }
 
-.write{
+.write {
   display: block;
   width: 100%;
   height: 52px;
@@ -65,41 +65,72 @@ aside {
   text-align: center;
   line-height: 52px;
   color: #fff;
-  background-color:#0008c3;
+  background-color: #0008c3;
   text-decoration: none;
 }
 
-.search_Box{
-  margin: 6px 0 16px;
-  position: relative;
-  height: 40px;
-  border: 1px solid #fff;
-  box-sizing: border-box;
+.search_Box {
+  margin: 6px 0 16px 0;
 }
 
-.search_Box label{
+.search_Box label {
   overflow: hidden;
   display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
   text-indent: -9999em;
   visibility: hidden;
 }
 
-.search_Box input{
-  width: 80%;
-  height: 100%;
-  margin-left: 5px;
-  border: none;
+.search_Box input {
+  width: 100%;
+  height: 52px;
   background-color: #101010;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.sub_menu {
   color: #fff;
 }
 
-input{
-  height: 44px;
-  padding: 0 10px;
-  border: 1px solid #fff;
+.video h2,
+p {
+  color: #c7c6fa;
+}
+
+.album h2 {
+  color: #c7c6fa;
+}
+
+.season_kart h2,
+p {
+  color: #c7c6fa;
+}
+
+.panel_menu {
+  margin-bottom: 20px;
+}
+
+.panel-heading {
+  font-weight: bold;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.active .panel-heading {
+  background: #3498db;
+}
+
+.panel-body {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.active .panel-body {
+  max-height: 300px;
 }
 
 main {
