@@ -1,3 +1,7 @@
+:root {
+  --text-color: #c7c6fa;
+}
+
 body {
   display: flex;
   background: #101010;
@@ -94,16 +98,16 @@ aside {
 
 .video h2,
 p {
-  color: #c7c6fa;
+  color: var(--text-color);
 }
 
 .album h2 {
-  color: #c7c6fa;
+  color: var(--text-color);
 }
 
 .season_kart h2,
 p {
-  color: #c7c6fa;
+  color: var(--text-color);
 }
 
 .panel_menu {
@@ -118,10 +122,6 @@ p {
   cursor: pointer;
 }
 
-.active .panel-heading {
-  background: #3498db;
-}
-
 .panel-body {
   padding: 0 15px;
   max-height: 0;
@@ -131,6 +131,21 @@ p {
 
 .active .panel-body {
   max-height: 300px;
+}
+
+.top_util {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.top_util div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_util div a {
+  border: 1px solid #fff;
 }
 
 main {
