@@ -6,13 +6,13 @@ body {
 .side_left {
   width: 13%;
   height: auto;
-  background: #3e3336 url(../images/Side01.png) left center / 260px no-repeat fixed;
+  background: #3e3336;
 }
 
 .side_right {
   width: 13%;
   height: auto;
-  background: #3e3336 url(../images/Side02.png) right center / 260px no-repeat fixed;
+  background: #3e3336;
 }
 
 .side_left img {
