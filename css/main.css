@@ -74,7 +74,7 @@ aside {
 }
 
 .search_Box {
-  margin: 6px 0 16px 0;
+  position: relative;
 }
 
 .search_Box label {
@@ -90,6 +90,7 @@ aside {
   background-color: #101010;
   color: #fff;
   border: 1px solid #fff;
+  box-sizing: border-box;
 }
 
 .sub_menu {
@@ -141,12 +142,20 @@ p {
 
 .top_util div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .top_util div a {
   border: 1px solid #fff;
 }
+
+.search_Box button{
+  position: absolute;
+  right: 0;
+  height: 52px;
+}
+
+
 
 main {
   flex: 1;
