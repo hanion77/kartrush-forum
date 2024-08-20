@@ -73,6 +73,14 @@ aside {
   text-decoration: none;
 }
 
+.main_menu ul{
+  list-style: none;
+}
+
+.panel-body ul{
+  list-style: none;
+}
+
 .search_Box {
   position: relative;
 }
@@ -91,6 +99,7 @@ aside {
   color: #fff;
   border: 1px solid #fff;
   box-sizing: border-box;
+  outline: none;
 }
 
 .sub_menu {
