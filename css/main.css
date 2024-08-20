@@ -5,6 +5,7 @@
 body {
   display: flex;
   background: #101010;
+  font-family:;
 }
 
 .side_left {
@@ -110,8 +111,9 @@ aside {
   outline: none;
 }
 
-.sub_menu {
+.sub_menu li a{
   color: #fff;
+  text-decoration: none;
 }
 
 .video h2,
@@ -164,6 +166,8 @@ p {
 
 .top_util div a {
   border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 .search_Box button{
@@ -174,6 +178,11 @@ p {
   padding:0; 
   margin:0; 
   outline:none;
+}
+
+.main_menu ul li a{
+  color: #6E6CCB ;
+  text-decoration: none;
 }
 
 .main_menu li:first-child a{
@@ -200,33 +209,32 @@ p {
   margin-top: 30px;
 }
 
-.main_menu ul li:not(:first-child, :last-child){
-  color: #6E6CCB;
-}
-
-.autoslide{
-  width: 100%;
-  height: 333px;
-  padding-bottom: 40px;
-}
-
 .slidewrapper{
-  width: 100%;
-  height: 100%;
+  width: 955px;
+  margin:3em auto;
+  height: 400px;
   overflow:hidden;
 }
-
 .slidecontainer{
   position: relative;
-  display: flex;
-  width: max-content;
+  width: 100%;
+  height: 100%;
+}
+.slidecontainer.animated{
+  transition:left 0.3s;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
   height: 100%;
 }
 
-.slide{
-  position: absolute;
-  width: 478px;
-  height: 100%;
+.sub_menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main {
