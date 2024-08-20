@@ -176,7 +176,33 @@ p {
   outline:none;
 }
 
+.main_menu li:first-child a{
+  color: var(--text-color);
+  text-decoration: none;
+}
 
+.main_menu li:last-child a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.panel_heading div{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.panel-body ul li a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.main_menu ul{
+  margin-top: 30px;
+}
+
+.main_menu ul li:not(:first-child, :last-child){
+  color: #6E6CCB;
+}
 
 main {
   flex: 1;
