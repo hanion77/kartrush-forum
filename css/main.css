@@ -85,12 +85,12 @@ aside {
   list-style: none;
 }
 
-.search_Box {
-  position: relative;
-}
-
 .slidecontainer, .sub_menu, .kart_body{
   list-style: none;
+}
+
+.search_Box {
+  position: relative;
 }
 
 .search_Box label {
