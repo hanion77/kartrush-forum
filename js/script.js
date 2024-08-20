@@ -18,20 +18,3 @@ for (let pm of panelMenu) {
     });
   });
 }
-
-
-function autoSlide(){
-  timer = setInterval(()=>{
-    let nextIdx = (currentIdx + 1)%slideCount;
-
-    showSlide(nextIdx);
-  }, 3000);
-}
-autoSlide();
-
-slideWrapper.addEventListener('mouseenter',()=>{
-  clearInterval(timer);
-})
-slideWrapper.addEventListener('mouseleave',()=>{
-  autoSlide();
-})
