@@ -81,8 +81,16 @@ aside {
   list-style: none;
 }
 
+.scroll ul{
+  list-style: none;
+}
+
 .search_Box {
   position: relative;
+}
+
+.slidecontainer, .sub_menu, .kart_body{
+  list-style: none;
 }
 
 .search_Box label {
@@ -162,6 +170,10 @@ p {
   position: absolute;
   right: 0;
   height: 52px;
+  border:none;
+  padding:0; 
+  margin:0; 
+  outline:none;
 }
 
 
