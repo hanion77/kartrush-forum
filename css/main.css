@@ -87,6 +87,7 @@ aside {
 
 .panel-body ul{
   list-style: none;
+  margin-left: 10px;
 }
 
 .scroll ul{
@@ -170,23 +171,34 @@ p {
 }
 
 .top_util {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
   height: 70px;
   border-bottom: 1px solid #d1d1d1;
 }
 
-.top_util div {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.top_util div a {
+.top_util a {
+  display: inline-block;
   width: 82px;
   height: 34px;
+  line-height: 34px;
+  color:var(--text-color);
   border: 1px solid #fff;
   border-radius: 20px;
   font-size: 15px;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
+}
+
+.top_util a:hover{
+  font-size: 15px;
+  font-weight: 700;
+  background: #fff;
+  color: #000;
 }
 
 .search_Box button{
@@ -208,6 +220,8 @@ p {
 .main_menu ul li a{
   color: #6E6CCB ;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .main_menu li:first-child a{
@@ -224,11 +238,15 @@ p {
   color: var(--text-color);
   text-decoration: none;
   margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .panel-body ul li a{
   color: var(--text-color);
   text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .main_menu ul{
@@ -263,10 +281,13 @@ p {
 }
 
 .sub_menu{
+  width: 955px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  text-align: center;
 }
 
 .acd{
@@ -278,7 +299,26 @@ p {
 }
 
 .video{
-  margin-top: 55px;
+  width: 955px;
+  margin: 0 auto;
+  padding: 55px;
+}
+
+.explanation{
+  width: 955px;
+  height: 412px;
+  border: 1px solid #d1d1d1;
+  margin-top: 20px;
+}
+
+.explanation h2{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.explanation p{
+  font-size: 20px;
+  font-weight: 400;
 }
 
 main {
