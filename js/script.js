@@ -19,11 +19,11 @@ for (let pm of panelMenu) {
   });
 }
 
-// 슬라이드 초기화
+
 slides.forEach((slide, index) => {
-  slide.style.left = '100%'; // 모든 슬라이드를 화면 밖에 위치시킴
+  slide.style.left = '100%'; 
 });
-slides[0].style.left = '0'; // 첫 번째 슬라이드를 화면에 보이게 설정
+slides[0].style.left = '0'; 
 
 function showSlide(num) {
   if (currentIdx === num) return;
