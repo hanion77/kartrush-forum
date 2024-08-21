@@ -11,6 +11,7 @@
 body {
   display: flex;
   background: #101010;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .side_left {
@@ -64,6 +65,7 @@ aside {
   line-height: 36px;
   text-decoration: none;
   color: #fff;
+  word-break: keep-all;
 }
 
 .write {
@@ -116,9 +118,17 @@ aside {
   outline: none;
 }
 
+.sub_menu li{
+  width: 235px;
+  height: 105px;
+  border: 1px solid #fff;
+}
+
 .sub_menu li a{
   color: #fff;
   text-decoration: none;
+  text-align: center;       
+  line-height: 100px;       
 }
 
 .video h2,
@@ -136,7 +146,8 @@ p {
 }
 
 .panel_menu {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  margin-left: 10px;
 }
 
 .panel-heading {
@@ -159,7 +170,6 @@ p {
 }
 
 .top_util {
-  width: 100%;
   height: 70px;
   border-bottom: 1px solid #d1d1d1;
 }
@@ -170,9 +180,13 @@ p {
 }
 
 .top_util div a {
+  width: 82px;
+  height: 34px;
   border: 1px solid #fff;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 15px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .search_Box button{
@@ -184,6 +198,11 @@ p {
   margin:0; 
   outline:none;
   background: #fff;
+}
+
+.main_menu ul li{
+  margin-bottom: 25px;
+  margin-left: 15px;
 }
 
 .main_menu ul li a{
@@ -204,6 +223,7 @@ p {
 .panel_heading div{
   color: var(--text-color);
   text-decoration: none;
+  margin-bottom: 15px;
 }
 
 .panel-body ul li a{
@@ -212,23 +232,28 @@ p {
 }
 
 .main_menu ul{
-  margin-top: 30px;
+  padding: 30px 0 15px 10px;
 }
 
 .slidewrapper{
   width: 955px;
-  margin:3em auto;
-  height: 400px;
-  overflow:hidden;
+  margin: 0 auto;
+  height: 333px;
+  overflow: hidden;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
+
 .slidecontainer{
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100%;  
 }
+
 .slidecontainer.animated{
   transition:left 0.3s;
 }
+
 .slide {
   position: absolute;
   top: 0;
@@ -239,8 +264,21 @@ p {
 
 .sub_menu{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 5px;
+}
+
+.acd{
+  margin-left: 15px;
+}
+
+.fa-solid, .fa-face-smile{
+  color: #d1d1d1;
+}
+
+.video{
+  margin-top: 55px;
 }
 
 main {
