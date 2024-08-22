@@ -144,7 +144,6 @@ p {
 
 .screen_shot{
   margin-bottom: 55px;
-  margin-left: 71px;
 }
 
 .album {
@@ -157,11 +156,15 @@ p {
 .season_kart h2{
   font-size: 20px;
   font-weight: 700;
+  margin-left: -17px;
+}
+
+.season_kart_desc{
+  margin-left: -17px;
 }
 
 .season_kart{
   margin-bottom: 55px;
-  margin-left: 71px;
   font-size: 15px;
   font-weight: 500;
 }
@@ -287,6 +290,7 @@ p {
   overflow: hidden;
   margin-top: 55px;
   margin-bottom: 55px;
+  position: relative;
 }
 
 .slidecontainer {
@@ -319,11 +323,6 @@ p {
 
 .acd {
   margin-left: 15px;
-}
-
-.fa-solid,
-.fa-face-smile {
-  color: #d1d1d1;
 }
 
 .video {
@@ -368,7 +367,7 @@ p {
 
 footer {
   border-top: 1px solid #d1d1d1;
-  width: 1140px;
+  width: 100%;
   height: 207px;
   display: flex;
   justify-content: flex-end;
@@ -433,8 +432,49 @@ footer {
 
 .more{
   position: absolute;
-  top: -15%;
-  right: 5%;
+  top: -20%;
+  right: 2%;
+}
+
+.more a{
+  display: inline-block;
+  width: 82px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.more a:hover{
+  color: #000;
+  background: #fff;
+}
+
+.section_s{
+  width: 955px;
+  margin: 0 auto;
+}
+
+.slidewrapper nav{
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom: 0.1rem;
+}
+
+.slidewrapper nav button{
+  border: none;
+  background: none;
+  font-size: 2em;
+  transition:0.5s;
+  &:hover{
+    color:rgba(255,255,255,1);
+  }
 }
 
 main {
