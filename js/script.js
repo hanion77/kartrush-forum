@@ -1,7 +1,7 @@
 const panelMenu = document.querySelectorAll(".panel_menu");
-const slideWrapper = document.querySelector('.slidewrapper');
-const slideContainer = slideWrapper.querySelector('.slidecontainer');
-const slides = slideWrapper.querySelectorAll('.slide');
+const slideWrapper = document.querySelector(".slidewrapper");
+const slideContainer = slideWrapper.querySelector(".slidecontainer");
+const slides = slideWrapper.querySelectorAll(".slide");
 const slideWidth = 478;
 const slideCount = slides.length;
 let currentIdx = 0;
@@ -21,14 +21,12 @@ for (let pm of panelMenu) {
   });
 }
 
-
 slides.forEach((slide, index) => {
-  slide.style.left = `${index*slideWidth}px`; 
+  slide.style.left = `${index * slideWidth}px`;
 });
 
-
-function showSlide(num) {  
-  slideContainer.style.left = `${-num*slideWidth}px`; 
+function showSlide(num) {
+  slideContainer.style.left = `${-num * slideWidth}px`;
   currentIdx = num;
 }
 showSlide(0);
@@ -41,9 +39,9 @@ function autoSlide() {
 }
 autoSlide();
 
-slideWrapper.addEventListener('mouseenter', () => {
+slideWrapper.addEventListener("mouseenter", () => {
   clearInterval(timer);
 });
-slideWrapper.addEventListener('mouseleave', () => {
+slideWrapper.addEventListener("mouseleave", () => {
   autoSlide();
 });
