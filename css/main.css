@@ -23,7 +23,7 @@
   font-size: 15px;
   display: none;
 }
-.popup.show {
+.popup .show {
   display: block;
 }
 
