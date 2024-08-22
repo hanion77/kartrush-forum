@@ -403,15 +403,15 @@ footer {
 }
 
 .horizontal_scroll {
-  width: 945px; /* 화면에 3개의 이미지가 보이도록 너비 조정 */
-  overflow-x: hidden; /* 가로 스크롤바 숨기기 */
+  width: 945px; 
+  overflow-x: hidden; 
   white-space: nowrap;
 }
 
 .scroll {
   display: flex;
-  gap: 10px; /* 요소 간 간격 조정 */
-  scroll-snap-type: x mandatory; /* 스크롤 스냅 활성화 */
+  gap: 10px; 
+  scroll-snap-type: x mandatory; 
 }
 
 .scroll ul {
@@ -419,7 +419,7 @@ footer {
   margin: 0;
   padding: 0;
   list-style: none;
-  scroll-snap-align: start; /* 각 요소 시작 지점에서 스냅 */
+  scroll-snap-align: start; 
 }
 
 .scroll li {
@@ -427,7 +427,7 @@ footer {
 }
 
 .scroll img {
-  width: 306px; /* 이미지 크기 */
+  width: 306px; 
   height: 248px;
 }
 
