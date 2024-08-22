@@ -123,10 +123,11 @@ aside {
   width: 235px;
   height: 105px;
   border: 1px solid #fff;
+  background:linear-gradient(#F36BC1, #F88ED1 20%, #FFC7EA 50%, #F88ED1 80%, #F36BC1);
 }
 
 .sub_menu li a{
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-align: center;       
   line-height: 100px;   
