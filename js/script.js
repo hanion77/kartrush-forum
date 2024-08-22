@@ -2,8 +2,8 @@ const panelMenu = document.querySelectorAll(".panel_menu");
 const slideWrapper = document.querySelector(".slidewrapper");
 const slideContainer = slideWrapper.querySelector(".slidecontainer");
 const slides = slideWrapper.querySelectorAll(".slide");
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 const slideWidth = 478;
 const slideCount = slides.length;
 const slideGap = 0;
@@ -25,44 +25,38 @@ for (let pm of panelMenu) {
   });
 }
 
-//슬라이드 전체 너비 반영
-slideContainer.style.width = (slideWidth*slideCount)+(slideGap*(slideCount-1))+'px';
+slideContainer.style.width =
+  slideWidth * slideCount + slideGap * (slideCount - 1) + "px";
 
-//이동함수
-/*
-moveSlide함수는 숫자가 들어오면 슬라이드 이동
-num = 1; slideContainer -230
-*/
-function moveSlide(num){
-  if(num > 3){
+function moveSlide(num) {
+  if (num > 3) {
     num = 0;
   }
-  if(num < 0){
+  if (num < 0) {
     num = slideCount - maxSlides;
   }
-  slideContainer.style.left = `${-num*(slideWidth+slideGap)}px`;
+  slideContainer.style.left = `${-num * (slideWidth + slideGap)}px`;
   currentIdx = num;
 }
 
-function moveSlide(num){
-  if(num > 3){
+function moveSlide(num) {
+  if (num > 3) {
     num = 0;
   }
-  if(num < 0){
+  if (num < 0) {
     num = slideCount - maxSlides;
   }
-  slideContainer.style.left = `${-num*(slideWidth+slideGap)}px`;
+  slideContainer.style.left = `${-num * (slideWidth + slideGap)}px`;
   currentIdx = num;
 }
 
-prevBtn.addEventListener('click', ()=>{
-  moveSlide(currentIdx -1)
+prevBtn.addEventListener("click", () => {
+  moveSlide(currentIdx - 1);
 });
 
-nextBtn.addEventListener('click', ()=>{
-  moveSlide(currentIdx +1)
+nextBtn.addEventListener("click", () => {
+  moveSlide(currentIdx + 1);
 });
-
 
 slides.forEach((slide, index) => {
   slide.style.left = `${index * slideWidth}px`;
@@ -89,13 +83,10 @@ slideWrapper.addEventListener("mouseleave", () => {
   autoSlide();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollContainer = document.querySelector(".horizontal_scroll");
 
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const scrollContainer = document.querySelector('.horizontal_scroll');
-
-  scrollContainer.addEventListener('wheel', (evt) => {
+  scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
   });
@@ -104,24 +95,24 @@ document.addEventListener('DOMContentLoaded', function () {
   let startX;
   let scrollLeft;
 
-  scrollContainer.addEventListener('mousedown', (e) => {
+  scrollContainer.addEventListener("mousedown", (e) => {
     isDown = true;
-    scrollContainer.classList.add('active');
+    scrollContainer.classList.add("active");
     startX = e.pageX - scrollContainer.offsetLeft;
     scrollLeft = scrollContainer.scrollLeft;
   });
 
-  scrollContainer.addEventListener('mouseleave', () => {
+  scrollContainer.addEventListener("mouseleave", () => {
     isDown = false;
-    scrollContainer.classList.remove('active');
+    scrollContainer.classList.remove("active");
   });
 
-  scrollContainer.addEventListener('mouseup', () => {
+  scrollContainer.addEventListener("mouseup", () => {
     isDown = false;
-    scrollContainer.classList.remove('active');
+    scrollContainer.classList.remove("active");
   });
 
-  scrollContainer.addEventListener('mousemove', (e) => {
+  scrollContainer.addEventListener("mousemove", (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - scrollContainer.offsetLeft;
@@ -130,4 +121,63 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+const popup = document.querySelector(".popup");
+const check = document.querySelector("#check");
+const button = document.querySelector("#button");
 
+button.addEventListener("click", () => {
+  if (check.checked) {
+    setCookie("Company", "ABC", 1);
+  } else {
+    delCookie("Company", "ABC");
+  }
+  popup.classList.remove("show");
+});
+
+function setCookie(name, val, due) {
+  let date = new Date();
+  date.setDate(date.getDate() + due);
+
+  let myCookie = `${name}=${val};expires=` + date.toUTCString();
+  document.cookie = myCookie;
+}
+
+function delCookie(name, val) {
+  let date = new Date();
+  date.setDate(date.getDate() - 1);
+  let myCookie = `${name}=${val};expires=` + date.toUTCString();
+  document.cookie = myCookie;
+}
+
+function checkCookie(name, val) {
+  let cookie = document.cookie.indexOf(`${name}=${val}`);
+  if (cookie === -1) {
+    popup.classList.add("show");
+  }
+}
+
+checkCookie("Company", "ABC");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const backtoTop = document.querySelector("#back_to_top");
+
+  window.addEventListener("scroll", () => {
+    let scrollAmt = window.scrollY;
+    console.log(scrollAmt);
+
+    if (scrollAmt > 600) {
+      backtoTop.classList.add("active");
+    } else {
+      backtoTop.classList.remove("active");
+    }
+  });
+
+  backtoTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      left: 0,
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
