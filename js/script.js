@@ -47,6 +47,8 @@ slideWrapper.addEventListener("mouseleave", () => {
 });
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const scrollContainer = document.querySelector('.horizontal_scroll');
 
@@ -80,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - scrollContainer.offsetLeft;
-    const walk = (x - startX) * 2; // 스크롤 속도 조정
+    const walk = (x - startX) * 2;
     scrollContainer.scrollLeft = scrollLeft - walk;
   });
 });
