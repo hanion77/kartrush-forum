@@ -142,8 +142,25 @@ p {
   color: var(--text-color);
 }
 
-.album h2 {
+.screen_shot{
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.album {
   color: var(--text-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.season_kart h2{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.season_kart{
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .season_kart h2,
@@ -351,6 +368,10 @@ p {
   gap: 22px;
 }
 
+.kart_body li p{
+  margin-top: 20px;
+}
+
 footer {
   border-top: 1px solid #d1d1d1;
   width: 1140px;
@@ -361,12 +382,53 @@ footer {
   align-items: center;
 }
 
+.footer_text{
+  margin-bottom: 20px;
+}
+
 .footer_text a {
   color: #fff;
+  text-decoration: none;
 }
 
 .footer_nexon span {
   color: #fff;
+}
+
+.footer_text i{
+  margin: 0 5px;
+  font-style: normal;
+  vertical-align: top;
+  color: #d6d6d6;
+}
+
+.horizontal_scroll {
+  width: 945px; /* 화면에 3개의 이미지가 보이도록 너비 조정 */
+  overflow-x: hidden; /* 가로 스크롤바 숨기기 */
+  white-space: nowrap;
+}
+
+.scroll {
+  display: flex;
+  gap: 10px; /* 요소 간 간격 조정 */
+  scroll-snap-type: x mandatory; /* 스크롤 스냅 활성화 */
+}
+
+.scroll ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-snap-align: start; /* 각 요소 시작 지점에서 스냅 */
+}
+
+.scroll li {
+  display: inline-block;
+}
+
+.scroll img {
+  width: 306px; /* 이미지 크기 */
+  height: 248px;
 }
 
 main {
