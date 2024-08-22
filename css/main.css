@@ -586,23 +586,23 @@ footer {
   }
 }
 
-#back_to_top {
-  width: 48px;
-  height: 48px;
+#backtotop {
+  width: 60px;
+  height: 85px;
   bottom: 100px;
   right: 200px;
   line-height: 48px;
   position: fixed;
   border: 1px solid #26231e;
   text-align: center;
-  color: rgba(38, 35, 30, 0.7);
-  background: rgba(217, 206, 193, 0.5);
+  color: #fff;
+  background: rgba(199, 198, 250, 0.4);
   opacity: 0;
   pointer-events: none;
   transition: 0.4s;
 }
 
-#back_to_top .active {
+#backtotop .active {
   opacity: 1;
   pointer-events: auto;
 }
