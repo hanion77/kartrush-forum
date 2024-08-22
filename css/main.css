@@ -143,14 +143,15 @@ p {
 }
 
 .screen_shot{
-  display: flex;
   margin-bottom: 55px;
+  margin-left: 71px;
 }
 
 .album {
   color: var(--text-color);
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .season_kart h2{
@@ -159,6 +160,8 @@ p {
 }
 
 .season_kart{
+  margin-bottom: 55px;
+  margin-left: 71px;
   font-size: 15px;
   font-weight: 500;
 }
@@ -349,16 +352,7 @@ p {
   font-weight: 400;
 }
 
-.season_kart {
-  margin-bottom: 55px;
-}
-
-.season_kart h2 {
-  margin-left: 90px;
-}
-
 .season_kart .season_kart_desc {
-  margin-left: 90px;
   margin-bottom: 20px;
 }
 
@@ -406,6 +400,7 @@ footer {
   width: 945px; 
   overflow-x: hidden; 
   white-space: nowrap;
+  overflow-y: hidden;
 }
 
 .scroll {
@@ -430,6 +425,16 @@ footer {
   width: 306px; 
   height: 248px;
   user-select: none;
+}
+
+.best_poto{
+  position: relative;
+}
+
+.more{
+  position: absolute;
+  top: -15%;
+  right: 5%;
 }
 
 main {
