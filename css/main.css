@@ -430,7 +430,6 @@ footer {
   width: 306px; 
   height: 248px;
   user-select: none;
-  pointer-events: none;
 }
 
 main {
