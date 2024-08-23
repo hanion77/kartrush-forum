@@ -158,8 +158,7 @@ function checkCookie(name, val) {
 
 checkCookie("Company", "ABC");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const backtoTop = document.querySelector("#back_to_top");
+  const backtoTop = document.querySelector("backtotop");
 
   window.addEventListener("scroll", () => {
     let scrollAmt = window.scrollY;
@@ -180,4 +179,4 @@ document.addEventListener("DOMContentLoaded", () => {
       behavior: "smooth",
     });
   });
-});
+
