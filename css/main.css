@@ -23,7 +23,7 @@
   font-size: 15px;
   display: none;
 }
-.popup .show {
+.popup.show {
   display: block;
 }
 
@@ -100,14 +100,14 @@ body {
 }
 
 .side_left {
-  width: 13%;
+  width: 260px;
   height: auto;
   background: #3e3336 url(../images/Side01.png) left center / 260px no-repeat
     fixed;
 }
 
 .side_right {
-  width: 13%;
+  width: 260px;
   height: auto;
   background: #3e3336 url(../images/Side02.png) right center / 260px no-repeat
     fixed;
