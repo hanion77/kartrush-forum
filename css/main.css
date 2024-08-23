@@ -602,7 +602,7 @@ footer {
   transition: 0.4s;
 }
 
-#backtotop .active {
+#backtotop.active {
   opacity: 1;
   pointer-events: auto;
 }
