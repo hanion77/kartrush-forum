@@ -158,7 +158,7 @@ function checkCookie(name, val) {
 
 checkCookie("Company", "ABC");
 
-  const backtoTop = document.querySelector("backtotop");
+  const backtoTop = document.querySelector("#backtotop");
 
   window.addEventListener("scroll", () => {
     let scrollAmt = window.scrollY;
